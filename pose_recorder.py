@@ -87,6 +87,10 @@ class PoseRecorder:
         )
 
     def draw_info(self, image, fps: int):
+        strokeThikcness = 3
+        textThickness = 1
+        strokeColor = (0, 0, 0)
+        textColor = (255, 255, 255)
         cv2.putText(image, 'FPS:' + str(fps), (10, 30), cv2.FONT_HERSHEY_SIMPLEX,
                     1.0, (0, 0, 0), 4, cv2.LINE_AA)
         cv2.putText(image, "FPS:" + str(fps), (10, 30), cv2.FONT_HERSHEY_SIMPLEX,
@@ -103,7 +107,8 @@ class PoseRecorder:
         # Split INFO_TEXT on newline characters
         info_text = INFO_TEXT.split('\n')
         for i, line in enumerate(info_text):
-            cv2.putText(image, line, (10, 300 + i * 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 1, cv2.LINE_AA)
+            cv2.putText(image, line, (10, 300 + i * 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, strokeColor, strokeThikcness, cv2.LINE_AA)
+            cv2.putText(image, line, (10, 300 + i * 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, textColor, textThickness, cv2.LINE_AA)
 
         return image
 

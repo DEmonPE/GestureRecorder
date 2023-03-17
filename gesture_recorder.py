@@ -1,4 +1,5 @@
 import json
+import time
 
 import cv2
 import numpy as np
@@ -9,7 +10,24 @@ from utils.tracker_2d import process_landmarks
 
 
 MAX_FRAMES = 30
+INFO_TEXT = ('Analysing Gesture\n'
+             'Window will close automatically\n')
 
+def draw_info(image):
+    strokeThikcness = 3
+    textThickness = 1
+    strokeColor = (0, 0, 0)
+    textColor = (255, 255, 255)
+
+    # Split INFO_TEXT on newline characters
+    info_text = INFO_TEXT.split('\n')
+    for i, line in enumerate(info_text):
+        cv2.putText(image, line, (10, 300 + i * 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, strokeColor, strokeThikcness,
+                    cv2.LINE_AA)
+        cv2.putText(image, line, (10, 300 + i * 20), cv2.FONT_HERSHEY_SIMPLEX, 0.6, textColor, textThickness,
+                    cv2.LINE_AA)
+
+    return image
 
 def record(gesture_name, file_name):
     # Check if .mov or .mp4 file exists - if it does, choose the right one
@@ -56,10 +74,10 @@ def record(gesture_name, file_name):
                     landmark = results.pose_world_landmarks.landmark[num.value]  # type: ignore
                     history[num.value].append((landmark.x, landmark.y) if landmark.visibility > 0.7 else (0, 0))
 
-            cv2.imshow('MediaPipe Pose', cv2.flip(image, 1))
+            cv2.imshow('MediaPipe Pose', draw_info(image=cv2.flip(image, 1)))
             if cv2.waitKey(5) & 0xFF == 27:
                 break
-
+        time.sleep(3)
         cap.release()
         cv2.destroyAllWindows()
 

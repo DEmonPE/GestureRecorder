@@ -7,9 +7,42 @@
     <list default="true" id="c1059f1c-ac77-4265-b1fc-c5b40fe2df7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/backEndConfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/backEndConfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/thumbnails/gestureGifs/testDelete2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/data/thumbnails/gestureGifs/testDelete2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/videos/testDelete2.avi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gesture_tracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/gesture_tracker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/Wow.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/aaa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/back_swing.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/baseball_swing.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/baseball_swing2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/front_stroke.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/hadouken.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/hadouken2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/kick.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/punch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/punch2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/punch_left.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/punch_left2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/relax.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/rotateHand.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/serve.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/tennis_swing.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/tennis_swing2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/testDelete2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/testDelete3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/testDelete4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/testName.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/testNewGifCvt.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/testNewGifCvt2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/testRecord.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/testWmm.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/wave.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/gestures/wave_right_hand.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/poses/1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/poses/2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/poses/3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/poses/testNewGifCvt.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/poses/testPose.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/poses/testRandom.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/videos/testDelete4.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gesture_recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/gesture_recorder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pose_recorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/pose_recorder.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/VideoRecorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/VideoRecorder.py" afterDir="false" />
     </list>
@@ -237,7 +270,10 @@
       <workItem from="1677888881286" duration="5117000" />
       <workItem from="1678441994192" duration="3988000" />
       <workItem from="1678494394406" duration="362000" />
-      <workItem from="1678574690091" duration="2034000" />
+      <workItem from="1678574690091" duration="3160000" />
+      <workItem from="1678643355417" duration="6000" />
+      <workItem from="1678643648815" duration="12000" />
+      <workItem from="1679059007774" duration="2910000" />
     </task>
     <servers />
   </component>
@@ -265,14 +301,14 @@
     <SUITE FILE_PATH="coverage/GestureRecorder$VideoRecorder.coverage" NAME="VideoRecorder Coverage Results" MODIFIED="1677799392550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/GestureRecorder$videoRecordTest.coverage" NAME="videoRecordTest Coverage Results" MODIFIED="1676869555513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/GestureRecorder$record_panel.coverage" NAME="record_panel Coverage Results" MODIFIED="1677292703447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recorder" />
-    <SUITE FILE_PATH="coverage/GestureRecorder$main.coverage" NAME="main Coverage Results" MODIFIED="1678631834404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GestureRecorder$main.coverage" NAME="main Coverage Results" MODIFIED="1679062088917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GestureRecorder$gesture_tracker.coverage" NAME="gesture_tracker Coverage Results" MODIFIED="1678442468872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GestureRecorder$GifUtils.coverage" NAME="GifUtils Coverage Results" MODIFIED="1676861485465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/GestureRecorder$videoFile2GifCvt.coverage" NAME="videoFile2GifCvt Coverage Results" MODIFIED="1676824321284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/GestureRecorder$control_panel.coverage" NAME="control_panel Coverage Results" MODIFIED="1676880606486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
     <SUITE FILE_PATH="coverage/GestureRecorder$gesture_recorder.coverage" NAME="gesture_recorder Coverage Results" MODIFIED="1677221451317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GestureRecorder$rec.coverage" NAME="rec Coverage Results" MODIFIED="1677682857069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/GestureRecorder$pose_recorder.coverage" NAME="pose_recorder Coverage Results" MODIFIED="1677220018314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/GestureRecorder$pose_recorder.coverage" NAME="pose_recorder Coverage Results" MODIFIED="1679060249197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GestureRecorder$test.coverage" NAME="test Coverage Results" MODIFIED="1676834013207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />
     <SUITE FILE_PATH="coverage/GestureRecorder$recorder.coverage" NAME="recorder Coverage Results" MODIFIED="1675792204289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/GestureRecorder$testPoseDetection.coverage" NAME="testPoseDetection Coverage Results" MODIFIED="1676642580492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gui" />

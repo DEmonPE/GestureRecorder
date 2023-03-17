@@ -9,13 +9,15 @@ from utils.fps_tracker import FPSTracker
 """ simple video recorder, opens a cv window via webcam
     user press 'r' to start recording, the recording length will be <= 2 seconds """
 
-INFO_TEXT = ('"R" to start recording\n'
-             '"R" again within 2 secs to stop recording\n'
+INFO_TEXT = ('Press "R" to start recording\n'
+             'Recording will end as \n'
+             'progress bar ends\n'
              
-             '"ESC" to quit')
-INFO_TEXT2 = ("The recording will start after a 3-second countdown\n"
-             "Setup and do gesture\n"
-              "neatly right when the recording starts\n")
+             '\n"ESC" to quit')
+INFO_TEXT2 = ("The recording starts\n"
+              "after a 3-sec countdown\n"
+             "\nSetup and do gesture\n"
+              "right when the recording starts\n")
 
 class VideoRecorder:
     def __init__(self, camera = 0, name: str = None):
@@ -78,6 +80,10 @@ class VideoRecorder:
 
 
     def draw_info(self, frame, fps: int):
+        strokeThikcness = 3
+        textThickness = 1
+        strokeColor = (0, 0, 0)
+        textColor = (255, 255, 255)
         frame_height, frame_width, _ = frame.shape
         cv2.putText(frame, 'FPS:' + str(fps), (10, 30), cv2.FONT_HERSHEY_SIMPLEX,
                     1.0, (0, 0, 0), 4, cv2.LINE_AA)
@@ -88,11 +94,12 @@ class VideoRecorder:
         info_text = INFO_TEXT.split('\n')
         # cv2.rectangle(frame, (int(self. size[0] / 2 - self.size[0] / 5), 0), (int(self.size[0] / 2 + self.size[0] / 5), self.size[1]), (255, 0, 0), 5)
         for i, line in enumerate(info_text):
-            cv2.putText(frame, line, (10, int(frame_height / 5 + i * 20)), cv2.FONT_HERSHEY_SIMPLEX, frame_height / 1000, (255, 255, 255), 1, cv2.LINE_AA)
+            cv2.putText(frame, line, (10, int(frame_height / 5 + i * 25)), cv2.FONT_HERSHEY_SIMPLEX, frame_height / 1000, (0, 0, 0), 3, cv2.LINE_AA)
+            cv2.putText(frame, line, (10, int(frame_height / 5 + i * 25)), cv2.FONT_HERSHEY_SIMPLEX, frame_height / 1000, (255, 255, 255), 1, cv2.LINE_AA)
 
         info_text2 = INFO_TEXT2.split('\n')
         for i, line in enumerate(info_text2[::-1]):
-            cv2.putText(frame, line, (10, frame_height - int(frame_height / 30 + i * 20)), cv2.FONT_HERSHEY_SIMPLEX, frame_height / 1000, (0, 0, 255), 1, cv2.LINE_AA)
+            cv2.putText(frame, line, (10, frame_height - int(frame_height / 10 + i * 25)), cv2.FONT_HERSHEY_SIMPLEX, frame_height / 1000, (0, 0, 255), 1, cv2.LINE_AA)
 
         if self.showCountDown:
             cv2.putText(frame, str(self.countDownNum), (int(frame_width / 2 - frame_width / 24), int(frame_height / 2)), cv2.FONT_HERSHEY_SIMPLEX, 5, (0, 0, 255), 5, cv2.LINE_AA)
@@ -161,7 +168,7 @@ class VideoRecorder:
         for i in range(100, 0, -1):
             # print(i)
             self.barLength = i
-            time.sleep(0.015)
+            time.sleep(0.012)
         print("recording stopped")
         self.recording = False
         self.showRect = False
